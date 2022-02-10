@@ -28,7 +28,7 @@ describe("Tickets", () => {
     it("Verifica se tem o cabeçalho 'TICKETBOX'", () => {
         cy.get('h1').should('contain', 'TICKETBOX')
     })
-    it.only("Verifica se o email é inválido", () => {
+    it("Verifica se o email é inválido", () => {
         cy.get('#email')
         .as('email')
             .type('email.com')
